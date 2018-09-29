@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-event-binding';
+  nombre:string;
+  resultado: number = 0;
+  constructor() {
+    this.nombre = 'Jaime Cervantes Velasco';
+  }
+  
+  cambiarNombre (name) {
+    this.nombre = this.nombre.split('').reverse().join('');;
+  }
 }
